@@ -1,0 +1,219 @@
+.centre__container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.centre__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 870px;
+    width: 100%;
+}
+
+.home__title {
+    margin: 0;
+    margin-left: 20px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.centre__happening{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.centre__happening-text{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #828282;
+}
+
+.select__languages{
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #1D9BF0;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.img__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.img__item{
+    margin-right: 23px;
+    
+    & + &{
+        margin-right: 23px;
+    }
+}
+
+.centre__btn{
+    width: 108px;
+    height: 50px;
+    margin-left: 785px;
+    padding: 0;
+    background-color: #1DA1F2;
+    opacity: 0.4;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 120px;
+    border: none;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+
+.centre__inner{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.centre__inner2, .centre__inner3{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.user1__img, .user2__img{
+    margin-right: 15px;
+}
+
+.user1__info, .user2__info, .user3__info{
+    display: flex;
+    align-items: center;
+}
+
+.user1__title{
+    width: 92px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.user2__title{
+    width: 143px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.user3__title{
+    width: 134px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.user1__mail, .user2__mail, .user3__mail{
+    margin-bottom: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.user1__post, .user2__post, .user3__post{
+    width: 747px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.user1__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.user1__list--3{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 0;
+}
+
+.user1__item{
+    margin-right: 100px;
+
+    & + &{
+        margin-right: 110px;
+    }
+}
+
+.user1__image{
+    margin-right: 12px;
+}
+
+.shashlik__img{
+    width: 680px;
+    height: 455px;
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+
+
