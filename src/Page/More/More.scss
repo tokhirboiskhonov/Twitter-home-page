@@ -1,0 +1,18 @@
+.more{
+    color: red;
+    font-size: x-large;
+    margin: 0;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+
+    &--light{
+        background-color: white;
+        color: #000000;
+    }
+
+    &--dark{
+        background-color: black;
+        color: red;
+    }
+}

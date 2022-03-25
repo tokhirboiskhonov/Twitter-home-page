@@ -18,21 +18,31 @@ import download from '../../Assets/Image/download.svg';
 import statistics from '../../Assets/Image/statistics.svg';
 import creativephoto from '../../Assets/Image/CreativePhoto.svg';
 import shashlik from '../../Assets/Image/shashlik.png';
-import languages from "../Localization/Languages";
+import languages from "../../Components/Localization/Languages";
+import useLanguages from "../../Hooks/useLanguages";
+import useTheme from "../../Hooks/useTheme";
 
-function Centre ({lang, setLang}) {
 
+
+function Centre () {
+    
+    const [lang, setLang] = useLanguages();
+    
+    const [theme, setTheme] = useTheme();
+    
     return(
         <>
         
-        <div className="centre__container">
+        <div className={`centre__container centre__container--${theme}`}>
         <header className='centre__heading'>
         <h1 className="home__title">{languages[lang].centre.hero.title}</h1>
+        
         <img
         src={stars}
         alt="Stars"
         width={23}
         height={22}/>
+        
         </header>
 
         <select className="select__languages" value={lang} onChange={(evt)=>setLang(evt.target.value)}>
@@ -42,7 +52,12 @@ function Centre ({lang, setLang}) {
         <option value="cn">CN</option>
         </select>
         
-        <div className="centre__hero">
+        <select className="select__theme" value={theme} onChange={(evt)=>setTheme(evt.target.value)}>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        </select>
+        
+        <div className='centre__hero'>
         <div className="centre__happening">
         
         <img
@@ -52,12 +67,10 @@ function Centre ({lang, setLang}) {
         width={60}
         height={60}/>
         
-        <p className="centre__happening-text">{languages[lang].centre.hero.description}</p>
+        <textarea cols="100" rows="3">{languages[lang].centre.hero.description}</textarea>
         
         </div>
-        
-        
-        
+
         <ul className="img__list">
         <li className="img__item">
         <img src={image} alt="images" width={20} height={20} />

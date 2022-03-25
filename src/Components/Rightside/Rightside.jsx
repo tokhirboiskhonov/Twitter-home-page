@@ -1,24 +1,34 @@
 import React from "react";
 import './Rightside.scss';
-// import Search from '../../Assets/Image/search.svg';
+import Search from '../../Assets/Image/search.svg';
 import Settings from '../../Assets/Image/settings.svg';
 import Mushtariy from '../../Assets/Image/Mushtariy.svg';
 import Shukhratbek from '../../Assets/Image/Shukhratbek.svg';
-import languages from "../Localization/Languages";
+import languages from "../../Components/Localization/Languages";
+import useLanguages from "../../Hooks/useLanguages";
 
-function Rightside({lang}) {
+import useTheme from "../../Hooks/useTheme";
+
+
+function Rightside() {
+    
+    const [lang] = useLanguages();
+    
+    const [theme] = useTheme();
+
+
     return(
         <>
-        <div className="rightside__container">
+        <div className={`rightside__container rightside__container--${theme}`}>
         <input className="rightside__input" type="text" placeholder={languages[lang].rightside.info.input} required/>
-        {/* <img
+        <img
         className="search__img"
         src={Search}
         alt="Search on input"
         width={24}
-        height={24}/> */}
+        height={24}/>
         
-        <ul className="trend__list">
+        <ul className={`trend__list trend__list--${theme}`}>
         <li>
         <div className="trend__div">
         <h2 className="trend__heading">{languages[lang].rightside.info.title1}</h2>
@@ -61,7 +71,7 @@ function Rightside({lang}) {
         </li>
         </ul>
         
-        <ul className="list">
+        <ul className={`list list--${theme}`}>
         <li className="item">
         <h2 className="h2">{languages[lang].rightside.info.title3}</h2>
         </li>
@@ -94,7 +104,7 @@ function Rightside({lang}) {
         
         </ul>
 
-        <ul className="last__list">
+        <ul className={`last__list last__list--${theme}`}>
             <li className="last__list-item">
                 <p className="last__text">Terms of Service</p>
             </li>

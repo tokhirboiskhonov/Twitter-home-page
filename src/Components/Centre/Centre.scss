@@ -3,7 +3,19 @@
     width: 100%;
     margin: 0;
     padding: 0;
+
+    &--light{
+        background-color: white;
+        color: #000000;
+    }
+
+    &--dark{
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
 }
+
 
 .centre__heading {
     display: flex;
@@ -21,7 +33,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #000000;
+    color: inherit;
 }
 
 .centre__happening{
@@ -39,11 +51,11 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 29px;
-    color: #828282;
+    color: inherit;
 }
 
-.select__languages{
-    width: 70px;
+.select__languages, .select__theme{
+    width: 150px;
     margin-top: 20px;
     margin-left: 15px;
     background-color: #1D9BF0;
@@ -52,6 +64,11 @@
     border-radius: 5px;
     border: none;
     outline: none;
+}
+
+textarea{
+    margin-left: 10px;
+    border: none;
 }
 
 .img__list{
@@ -121,7 +138,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    color: #000000;
+    color: inherit;
 }
 
 .user2__title{
@@ -134,7 +151,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    color: #000000;
+    color: inherit;
 }
 
 .user3__title{
@@ -147,7 +164,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    color: #000000;
+    color: inherit;
 }
 
 .user1__mail, .user2__mail, .user3__mail{
@@ -157,7 +174,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #000000;
+    color: inherit;
     opacity: 0.6;
 }
 
@@ -171,7 +188,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #000000;
+    color: inherit;
 }
 
 .user1__list{
