@@ -8,7 +8,7 @@ function More() {
 
     return(
         <>
-        <p className={`more more--${theme}`}>This page isn't working</p>
+        <p className={`more more--${theme}`}>This page is being developed now</p>
         </>
     )
 }

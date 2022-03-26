@@ -8,7 +8,7 @@ function Notifications() {
 
     return(
         <>
-        <p className={`notifications notifications--${theme}`}>This page isn't working</p>
+        <p className={`notifications notifications--${theme}`}>This page is being developed now</p>
         </>
     )
 }

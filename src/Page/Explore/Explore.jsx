@@ -8,7 +8,7 @@ function Explore() {
 
     return(
         <>
-        <p className={`explore explore--${theme}`}>This page isn't working</p>
+        <p className={`explore explore--${theme}`}>This page is being developed now</p>
         </>
     )
 }

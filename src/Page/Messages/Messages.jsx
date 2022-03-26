@@ -8,7 +8,7 @@ function Messages() {
 
     return(
         <>
-        <p className={`messages messages--${theme}`}>This page isn't working</p>
+        <p className={`messages messages--${theme}`}>This page is being developed now</p>
         </>
     )
 }
