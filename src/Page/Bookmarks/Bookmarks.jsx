@@ -8,7 +8,7 @@ function Bookmarks() {
 
     return(
         <>
-        <p className={`bookmarks bookmarks--${theme}`}>This page isn't working</p>
+        <p className={`bookmarks bookmarks--${theme}`}>This page is being developed now</p>
         </>
     )
 }

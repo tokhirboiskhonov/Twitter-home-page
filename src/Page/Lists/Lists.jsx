@@ -8,7 +8,7 @@ function Lists () {
 
     return(
         <>
-        <p className={`lists lists--${theme}`}>This page isn't working</p>
+        <p className={`lists lists--${theme}`}>This page is being developed now</p>
         </>
     )
 }
